@@ -4,7 +4,6 @@ OpenWRT/LEDE feed for iwpaninfo package
 ## Table of Contents
 
 - [Install](#install)
-- [TODO](#todo)
 - [Contribute](#contribute)
 - [License](#license)
 
@@ -28,11 +27,6 @@ Exit, save and build
 
     $ make package/iwpaninfo/compile
     $ make package/iwpaninfo/install
-
-## TODO
-- [ ] support all attributes of nl802154
-- [ ] Lua bindings
-- [ ] More tests
 
 ## Contribute
 
