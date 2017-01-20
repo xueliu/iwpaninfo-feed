@@ -13,15 +13,12 @@ PKG_RELEASE=$(PKG_SOURCE_VERSION)
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL=https://github.com/xueliu/iwpaninfo
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
-PKG_SOURCE_VERSION:=b2aa9d548f61c7260fb5c9085bbabc0fcf8d1f6a
+PKG_SOURCE_VERSION:=36fa83770782778f599126c27b7fade1f7eccea7
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 PKG_MAINTAINER:=Xue Liu <liuxuenetmail@gmail.com>
 PKG_LICENSE:=GPL-2.0
-
-PKG_BUILD_DIR := $(BUILD_DIR)/$(PKG_NAME)
 	
-PKG_CONFIG_DEPENDS := \
-	CONFIG_PACKAGE_kmod-mac802154
+PKG_CONFIG_DEPENDS := CONFIG_PACKAGE_kmod-mac802154
 
 include $(INCLUDE_DIR)/package.mk
 
@@ -55,7 +52,7 @@ endef
 define Package/iwpaninfo
   SECTION:=utils
   CATEGORY:=Utilities
-  TITLE:=Generalized Wireless Information utility
+  TITLE:=Generalized 802.15.4 Information utility
   DEPENDS:=+libiwpaninfo
 endef
 
