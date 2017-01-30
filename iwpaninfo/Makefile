@@ -27,7 +27,7 @@ define Package/libiwpaninfo
   SECTION:=libs
   CATEGORY:=Libraries
   TITLE:=Generalized 802.15.4 Information Library (iwpaninfo)
-  DEPENDS:=+PACKAGE_kmod-mac802154:libnl-tiny +libuci
+  DEPENDS:=+PACKAGE_kmod-mac802154:libnl +libnl-genl +libuci
   ABI_VERSION:=$(PKG_RELEASE)
 endef
 
